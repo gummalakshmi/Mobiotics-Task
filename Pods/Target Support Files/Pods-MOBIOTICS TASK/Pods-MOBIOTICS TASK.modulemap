@@ -1,0 +1,6 @@
+framework module Pods_MOBIOTICS_TASK {
+  umbrella header "Pods-MOBIOTICS TASK-umbrella.h"
+
+  export *
+  module * { export * }
+}
