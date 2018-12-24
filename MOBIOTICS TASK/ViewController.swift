@@ -23,6 +23,8 @@ class ViewController: UIViewController,UITableViewDataSource,UITableViewDelegate
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationItem.setHidesBackButton(true, animated:true);
+
         let tapped = UITapGestureRecognizer(target: self, action: #selector(tappedInView))
         self.view.addGestureRecognizer(tapped)
         searchBarController.delegate = self

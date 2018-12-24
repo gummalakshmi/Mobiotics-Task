@@ -13,9 +13,51 @@ import CoreData
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
-
+    var names = [String]()
+ var filteredData: [String]!
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+        
+        
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        let context = appDelegate.persistentContainer.viewContext
+        let request = NSFetchRequest<NSFetchRequestResult>(entityName: "Contact")
+        request.returnsObjectsAsFaults = false
+        do {
+            let result = try context.fetch(request)
+            
+            if result.isEmpty {
+                let storyboard:UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+                let navigationController:UINavigationController = storyboard.instantiateInitialViewController() as! UINavigationController
+                let rootViewController:UIViewController = storyboard.instantiateViewController(withIdentifier: "AddContactViewController") as! AddContactViewController
+                
+                //                    let rootViewController:UIViewController = storyboard.instantiateViewController(withIdentifier: "ViewController") as! ViewController
+                navigationController.viewControllers = [rootViewController]
+                self.window?.rootViewController = navigationController
+              print("The context",result)
+            }
+            for data in result as! [NSManagedObject] {
+                print(data.value(forKey: "firstName") as! String)
+                names.append(data.value(forKey: "firstName") as! String)
+                 filteredData = names
+                if filteredData != nil {
+                   
+                }
+                else{
+                    let storyboard:UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+                    let navigationController:UINavigationController = storyboard.instantiateInitialViewController() as! UINavigationController
+                    
+                      let rootViewController:UIViewController = storyboard.instantiateViewController(withIdentifier: "ViewController") as! ViewController
+                  
+                    navigationController.viewControllers = [rootViewController]
+                    self.window?.rootViewController = navigationController
+                }
+            }
+        } catch {
+            
+            print("Failed")
+        }
+        
+        
         // Override point for customization after application launch.
         return true
     }
