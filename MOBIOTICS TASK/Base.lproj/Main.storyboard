@@ -259,7 +259,7 @@
                                     <constraint firstAttribute="width" constant="280" id="PEk-aW-cpa"/>
                                     <constraint firstAttribute="height" constant="30" id="gGA-Uf-ngm"/>
                                 </constraints>
-                                <state key="normal" title="Button">
+                                <state key="normal" title="Add Contact">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <color key="titleShadowColor" red="0.23921568630000001" green="0.83938731740000005" blue="0.53174707379999997" alpha="0.85788952460000001" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
@@ -306,6 +306,7 @@
                             <constraint firstItem="D7Y-sX-KXp" firstAttribute="trailing" secondItem="hJb-YE-Iof" secondAttribute="trailing" constant="104" id="kVF-Be-RI4"/>
                             <constraint firstItem="h4S-zg-33Y" firstAttribute="top" secondItem="COR-kW-rhT" secondAttribute="bottom" constant="15" id="lrR-35-do6"/>
                             <constraint firstItem="8Hc-Qj-8fe" firstAttribute="leading" secondItem="D7Y-sX-KXp" secondAttribute="leading" constant="62" id="p33-wD-uqJ"/>
+                            <constraint firstItem="j9C-gu-hbJ" firstAttribute="top" secondItem="aaA-uT-xCc" secondAttribute="bottom" constant="2" id="pZP-1A-fxu"/>
                             <constraint firstItem="D7Y-sX-KXp" firstAttribute="trailing" secondItem="j9C-gu-hbJ" secondAttribute="trailing" constant="16" id="pq6-mF-81D"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="D7Y-sX-KXp"/>
