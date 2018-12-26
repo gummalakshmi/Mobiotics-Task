@@ -62,7 +62,7 @@
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="360" id="uXB-6v-sEY"/>
                                 </constraints>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="MyNameCell" rowHeight="71" id="5G7-vZ-e3L" customClass="MyNameCell" customModule="MOBIOTICS_TASK" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="MyNameCell" rowHeight="71" id="5G7-vZ-e3L" customClass="MyNameCell" customModule="MOBIOTICS_TASK" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="320" height="71"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="5G7-vZ-e3L" id="BK6-P3-Hrq">
@@ -141,11 +141,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="First Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8Hc-Qj-8fe" customClass="kTextFiledPlaceHolder" customModule="MOBIOTICS_TASK" customModuleProvider="target">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="First Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8Hc-Qj-8fe" customClass="kTextFiledPlaceHolder" customModule="MOBIOTICS_TASK" customModuleProvider="target">
                                 <rect key="frame" x="62" y="168" width="200" height="50"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="TEC-Uf-jmC"/>
-                                    <constraint firstAttribute="width" constant="200" id="wzX-8u-atl"/>
+                                    <constraint firstAttribute="width" constant="200" id="Fi2-jg-2QE"/>
+                                    <constraint firstAttribute="height" constant="50" id="ibS-tb-RJ2"/>
                                 </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -162,7 +162,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Last Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mSU-Uz-fQD" customClass="kTextFiledPlaceHolder" customModule="MOBIOTICS_TASK" customModuleProvider="target">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Last Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mSU-Uz-fQD" customClass="kTextFiledPlaceHolder" customModule="MOBIOTICS_TASK" customModuleProvider="target">
                                 <rect key="frame" x="62" y="232" width="200" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="fa7-Xo-8Bn"/>
@@ -183,7 +183,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Gmail" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="COR-kW-rhT" customClass="kTextFiledPlaceHolder" customModule="MOBIOTICS_TASK" customModuleProvider="target">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Gmail" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="COR-kW-rhT" customClass="kTextFiledPlaceHolder" customModule="MOBIOTICS_TASK" customModuleProvider="target">
                                 <rect key="frame" x="62" y="297" width="200" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="O7E-rK-7Xe"/>
@@ -204,7 +204,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Phone Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="h4S-zg-33Y" customClass="kTextFiledPlaceHolder" customModule="MOBIOTICS_TASK" customModuleProvider="target">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Phone Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="h4S-zg-33Y" customClass="kTextFiledPlaceHolder" customModule="MOBIOTICS_TASK" customModuleProvider="target">
                                 <rect key="frame" x="62" y="362" width="200" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="WFR-LM-IlN"/>
@@ -228,7 +228,7 @@
                                     <outlet property="delegate" destination="1eH-rC-xZF" id="LfV-jg-GEa"/>
                                 </connections>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Area Pincode" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aaA-uT-xCc" customClass="kTextFiledPlaceHolder" customModule="MOBIOTICS_TASK" customModuleProvider="target">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Area Pincode" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aaA-uT-xCc" customClass="kTextFiledPlaceHolder" customModule="MOBIOTICS_TASK" customModuleProvider="target">
                                 <rect key="frame" x="62" y="430" width="200" height="53"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="53" id="5C6-ZU-sB5"/>
@@ -256,8 +256,8 @@
                                 <rect key="frame" x="24" y="485" width="280" height="30"/>
                                 <color key="backgroundColor" red="0.23921568630000001" green="0.83938731740000005" blue="0.53174707379999997" alpha="0.85788952460000001" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="280" id="PEk-aW-cpa"/>
-                                    <constraint firstAttribute="height" constant="30" id="gGA-Uf-ngm"/>
+                                    <constraint firstAttribute="width" constant="280" id="ZSM-I6-54J"/>
+                                    <constraint firstAttribute="height" constant="30" id="zoq-AA-nV9"/>
                                 </constraints>
                                 <state key="normal" title="Add Contact">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -268,11 +268,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QA8-fG-e73">
-                                <rect key="frame" x="118" y="57" width="88" height="74"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="74" id="9Ka-ix-BGc"/>
-                                    <constraint firstAttribute="width" constant="88" id="RxC-GN-Zdn"/>
-                                </constraints>
+                                <rect key="frame" x="122" y="57" width="88" height="30"/>
                                 <connections>
                                     <action selector="profilePicSelect:" destination="1eH-rC-xZF" eventType="touchUpInside" id="nVw-IV-x1O"/>
                                 </connections>
@@ -280,34 +276,31 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="user_profile" translatesAutoresizingMaskIntoConstraints="NO" id="hJb-YE-Iof">
                                 <rect key="frame" x="116" y="40" width="100" height="102"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="102" id="Ng3-wl-Q97"/>
-                                    <constraint firstAttribute="width" constant="100" id="npM-Jd-vEu"/>
+                                    <constraint firstAttribute="height" constant="102" id="0D4-sO-228"/>
                                 </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="QA8-fG-e73" firstAttribute="leading" secondItem="hJb-YE-Iof" secondAttribute="trailing" constant="-98" id="0FO-n7-48S"/>
+                            <constraint firstItem="D7Y-sX-KXp" firstAttribute="trailing" secondItem="QA8-fG-e73" secondAttribute="trailing" constant="110" id="1Af-gF-np0"/>
+                            <constraint firstItem="QA8-fG-e73" firstAttribute="top" secondItem="D7Y-sX-KXp" secondAttribute="top" constant="37" id="24j-mj-DYF"/>
                             <constraint firstItem="COR-kW-rhT" firstAttribute="top" secondItem="mSU-Uz-fQD" secondAttribute="bottom" constant="15" id="6zl-HP-Tdd"/>
                             <constraint firstItem="D7Y-sX-KXp" firstAttribute="trailing" secondItem="COR-kW-rhT" secondAttribute="trailing" constant="58" id="7TR-uH-nYD"/>
-                            <constraint firstItem="hJb-YE-Iof" firstAttribute="leading" secondItem="D7Y-sX-KXp" secondAttribute="leading" constant="116" id="CEZ-kS-qdh"/>
-                            <constraint firstItem="8Hc-Qj-8fe" firstAttribute="top" secondItem="hJb-YE-Iof" secondAttribute="bottom" constant="26" id="DbF-8D-uv6"/>
-                            <constraint firstItem="QA8-fG-e73" firstAttribute="leading" secondItem="hJb-YE-Iof" secondAttribute="trailing" constant="-98" id="Dmc-fV-Wdd"/>
+                            <constraint firstItem="j9C-gu-hbJ" firstAttribute="leading" secondItem="D7Y-sX-KXp" secondAttribute="leading" constant="24" id="EfY-WK-mf4"/>
                             <constraint firstItem="D7Y-sX-KXp" firstAttribute="trailing" secondItem="aaA-uT-xCc" secondAttribute="trailing" constant="58" id="EvT-6q-Dy4"/>
-                            <constraint firstItem="mSU-Uz-fQD" firstAttribute="top" secondItem="8Hc-Qj-8fe" secondAttribute="bottom" constant="14" id="HLY-jD-agm"/>
-                            <constraint firstItem="D7Y-sX-KXp" firstAttribute="trailing" secondItem="8Hc-Qj-8fe" secondAttribute="trailing" constant="58" id="M2o-i5-LU6"/>
+                            <constraint firstItem="hJb-YE-Iof" firstAttribute="top" secondItem="D7Y-sX-KXp" secondAttribute="top" constant="20" id="H7e-F3-jaw"/>
                             <constraint firstItem="D7Y-sX-KXp" firstAttribute="trailing" secondItem="h4S-zg-33Y" secondAttribute="trailing" constant="58" id="MnQ-lW-zae"/>
-                            <constraint firstItem="D7Y-sX-KXp" firstAttribute="bottom" secondItem="j9C-gu-hbJ" secondAttribute="bottom" constant="4" id="RG6-I7-KSP"/>
-                            <constraint firstItem="QA8-fG-e73" firstAttribute="top" secondItem="hJb-YE-Iof" secondAttribute="bottom" constant="-85" id="YMN-ZO-3hY"/>
+                            <constraint firstItem="8Hc-Qj-8fe" firstAttribute="leading" secondItem="D7Y-sX-KXp" secondAttribute="leading" constant="62" id="Ndd-gN-7ch"/>
+                            <constraint firstItem="mSU-Uz-fQD" firstAttribute="top" secondItem="8Hc-Qj-8fe" secondAttribute="bottom" constant="14" id="SXf-s1-Yry"/>
+                            <constraint firstItem="D7Y-sX-KXp" firstAttribute="trailing" secondItem="hJb-YE-Iof" secondAttribute="trailing" constant="104" id="V0c-Vu-GWh"/>
                             <constraint firstItem="D7Y-sX-KXp" firstAttribute="trailing" secondItem="mSU-Uz-fQD" secondAttribute="trailing" constant="58" id="YsW-Az-iUT"/>
-                            <constraint firstItem="j9C-gu-hbJ" firstAttribute="leading" secondItem="D7Y-sX-KXp" secondAttribute="leading" constant="24" id="dna-48-i6v"/>
-                            <constraint firstItem="hJb-YE-Iof" firstAttribute="top" secondItem="D7Y-sX-KXp" secondAttribute="top" constant="20" id="ej8-yq-naA"/>
+                            <constraint firstItem="D7Y-sX-KXp" firstAttribute="bottom" secondItem="j9C-gu-hbJ" secondAttribute="bottom" constant="4" id="h4g-iU-pGa"/>
                             <constraint firstItem="aaA-uT-xCc" firstAttribute="top" secondItem="h4S-zg-33Y" secondAttribute="bottom" constant="18" id="h9W-Sj-qWa"/>
-                            <constraint firstItem="D7Y-sX-KXp" firstAttribute="trailing" secondItem="hJb-YE-Iof" secondAttribute="trailing" constant="104" id="kVF-Be-RI4"/>
+                            <constraint firstItem="8Hc-Qj-8fe" firstAttribute="top" secondItem="hJb-YE-Iof" secondAttribute="bottom" constant="26" id="lMn-hd-daP"/>
                             <constraint firstItem="h4S-zg-33Y" firstAttribute="top" secondItem="COR-kW-rhT" secondAttribute="bottom" constant="15" id="lrR-35-do6"/>
-                            <constraint firstItem="8Hc-Qj-8fe" firstAttribute="leading" secondItem="D7Y-sX-KXp" secondAttribute="leading" constant="62" id="p33-wD-uqJ"/>
-                            <constraint firstItem="j9C-gu-hbJ" firstAttribute="top" secondItem="aaA-uT-xCc" secondAttribute="bottom" constant="2" id="pZP-1A-fxu"/>
-                            <constraint firstItem="D7Y-sX-KXp" firstAttribute="trailing" secondItem="j9C-gu-hbJ" secondAttribute="trailing" constant="16" id="pq6-mF-81D"/>
+                            <constraint firstItem="D7Y-sX-KXp" firstAttribute="trailing" secondItem="j9C-gu-hbJ" secondAttribute="trailing" constant="16" id="tJ0-p3-ReT"/>
+                            <constraint firstItem="QA8-fG-e73" firstAttribute="leading" secondItem="D7Y-sX-KXp" secondAttribute="leading" constant="122" id="uQ6-uj-cGz"/>
+                            <constraint firstItem="hJb-YE-Iof" firstAttribute="leading" secondItem="D7Y-sX-KXp" secondAttribute="leading" constant="116" id="ucw-L8-yno"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="D7Y-sX-KXp"/>
                     </view>

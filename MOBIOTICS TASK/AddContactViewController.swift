@@ -242,7 +242,7 @@ class AddContactViewController: UIViewController,UINavigationControllerDelegate,
                 //here dataResponse received from a network request
                 let jsonResponse = try JSONSerialization.jsonObject(with:
                     dataResponse, options: [])
-                print("the data is ",jsonResponse)
+             
                 guard let jsonArray = jsonResponse as? [[String: Any]] else {
                     return
                 }
@@ -250,7 +250,7 @@ class AddContactViewController: UIViewController,UINavigationControllerDelegate,
                 for dic in jsonArray{
                     guard let title = dic["alpha2Code"] as? String  else { return }
                     self.capital.append(title)
-                    print("console",self.capital);
+                 
                 }
                 //Response result
             } catch let parsingError {
